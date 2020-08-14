@@ -1,0 +1,56 @@
+@import "utils/commonStyles/colors.scss";
+@import "utils/commonStyles/flex.scss";
+
+.imagecard {
+  @include flex-col-b-sb-cen;
+  text-decoration: none;
+  color: $black;
+  padding: 20px 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.imagecard:hover {
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px $lightGrey;
+}
+
+.imagecard__img {
+  @include flex-col-cen;
+  flex: 1;
+}
+
+.imagecard__img > img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 170px;
+}
+
+.imagecard--bottom {
+  @include flex-col-h-cen;
+  height: 30%;
+  padding-top: 5px;
+}
+
+.imagecard__title {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.imagecard__second-title {
+}
+
+.imagecard__third-title {
+  font-size: 15px;
+  opacity: 0.5;
+  max-width: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.imagecard__second-title::first-letter,
+.imagecard__third-title::first-letter {
+  text-transform: capitalize;
+}

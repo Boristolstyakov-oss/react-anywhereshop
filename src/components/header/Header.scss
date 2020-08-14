@@ -1,0 +1,62 @@
+@import "utils/commonStyles/colors.scss";
+@import "utils/commonStyles/flex.scss";
+
+.header {
+  @include flex-row-sb;
+  font-family: Poppins-Regular;
+  background-color: $white;
+  color: $black;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 2px 2px 10px $lightGrey;
+}
+
+/* header-left */
+.header--left {
+  @include flex-row-v-cen;
+  width: 60%;
+  height: 35px;
+}
+.header__logo {
+  text-decoration: none;
+  color: $black;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.header__searchbox {
+  padding: 0 10px;
+  flex: 1;
+  min-width: 200px;
+  height: 100%;
+}
+
+/* header-right */
+.header--right {
+  @include flex-row-v-cen;
+  padding: 0 10px;
+}
+
+.header__profile {
+  padding: 0 10px;
+}
+
+.header__orders {
+  padding: 0 10px;
+}
+
+.header__cart {
+  @include flex-row-v-cen;
+  text-decoration: none;
+  color: $black;
+  padding: 0 10px;
+}
+
+.header__cart-img {
+}
+
+.header__cart-text {
+  padding-left: 5px;
+}

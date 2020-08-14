@@ -1,0 +1,30 @@
+@import "utils/commonStyles/colors.scss";
+@import "utils/commonStyles/flex.scss";
+
+.searchbox {
+  @include flex-row;
+  height: 100%;
+}
+
+.searchbox__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  border-width: 0;
+  border-radius: 1px;
+  outline: none;
+  min-height: 30px;
+  background: $lightGrey;
+}
+
+.searchbox__icon-wrapper {
+  @include flex-col-cen;
+  background: $lightGrey;
+  padding: 0 10px;
+}
+
+.searchbox__icon {
+  width: 20px;
+  height: 30px;
+}

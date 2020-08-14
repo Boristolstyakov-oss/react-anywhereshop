@@ -1,0 +1,22 @@
+@import "utils/commonStyles/colors.scss";
+@import "utils/commonStyles/flex.scss";
+
+.product-list {
+}
+
+.product-list__content {
+  @include flex-row;
+  background-color: $grey;
+  padding: 10px;
+}
+
+.product-list__content--left {
+  width: 20%;
+}
+
+.product-list__content--right {
+  @include flex-row;
+  margin-left: 1%;
+  width: 79%;
+  flex-wrap: wrap;
+}

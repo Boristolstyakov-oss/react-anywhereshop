@@ -1,0 +1,173 @@
+@import "utils/commonStyles/colors.scss";
+@import "utils/commonStyles/flex.scss";
+
+.product-page {
+  background-color: $white;
+}
+
+.product-page__content {
+  @include flex-row;
+  padding: 30px 30px;
+}
+
+.product-page__content--left {
+  @include flex-col;
+  width: 30%;
+  // height: calc(100vh - 75px); // TODO: change this later
+}
+
+.product-page__content--left-top {
+  @include flex-row;
+}
+
+.product-page__content__small-images {
+  @include flex-col;
+}
+
+.product-page__content__small-image {
+  @include flex-row-cen;
+  min-width: 48px;
+  min-height: 62px;
+  margin: 5px;
+  border: 1px solid $lightGrey;
+}
+
+.product-page__content__small-image:first-child {
+  margin-top: 0;
+}
+
+.product-page__content__small-image > img {
+  padding: 5px;
+  width: auto;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.product-page__content__image {
+  @include flex-row-cen;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.product-page__content__image > img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 350px;
+}
+
+.product-page__content--left-bottom {
+  @include flex-row-sb;
+}
+
+.product-page__content--right {
+  width: 70%;
+  margin-left: 30px;
+  padding: 0 30px;
+  border-left: 1px solid $lightGrey;
+  // max-height: calc(100vh - 75px);  // TODO: change this later
+  // overflow-y: overlay;  // TODO: change this later
+}
+
+.product-page__content__brandName {
+  font-size: 17px;
+  color: $darkGrey;
+  padding-bottom: 5px;
+}
+
+.product-page__content__productTitle {
+  font-size: 20px;
+  color: $darkGrey;
+  padding-bottom: 10px;
+}
+
+.product-page__content__prices {
+  @include flex-row-v-cen;
+  padding-bottom: 15px;
+}
+
+.product-page__content__prices-offerPrice {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.product-page__content__prices-actualPrice {
+  font-size: 24px;
+  text-decoration: line-through;
+  padding-right: 10px;
+}
+
+.product-page__content__prices-discount {
+  font-size: 24px;
+}
+
+.product-page__content__size {
+}
+
+.product-page__content__size-header {
+  padding-bottom: 5px;
+}
+
+.product-page__content__size-values {
+  @include flex-row;
+  padding-bottom: 20px;
+}
+
+.product-page__content__size-value-btnWrapper {
+  margin-right: 5px;
+}
+
+.product-page__content__size-value {
+  border: 1px solid $lightGrey;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.product-page__content__size-value:last-child {
+  margin-right: 0;
+}
+
+.product-page__content__color {
+}
+
+.product-page__content__color-header {
+  padding-bottom: 5px;
+}
+
+.product-page__content__color-values {
+  @include flex-row;
+}
+
+.product-page__content__color-value-btnWrapper {
+  margin-right: 5px;
+}
+
+.product-page__content__color-value {
+  border: 1px solid $lightGrey;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.product-page__content__color-value:last-child {
+  margin-right: 0;
+}
+
+// Custom Scroll bar
+.product-page__content--right::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+
+.product-page__content--right::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.product-page__content--right::-webkit-scrollbar-thumb {
+  background: $lightGrey;
+}
+
+.product-page__content--right::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

@@ -1,0 +1,28 @@
+@import "utils/commonStyles/flex.scss";
+
+.dropdown {
+}
+
+.dropdown__header {
+  @include flex-row-sb;
+}
+.dropdown__header-text {
+  text-transform: capitalize;
+}
+.dropdown__header-icon {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdown__list {
+}
+
+.dropdown__list-item {
+  @include flex-row;
+}
+
+.dropdown__showMoreLessBtn {
+  @include flex-row-start;
+}
